@@ -3,7 +3,7 @@
   "description": "Ink file picker with security properties for meteor",
   "homepage": "https://github.com/wulx/impicker-security",
   "author": "Gurdy Woo <gurdy.woo@gmail.com>",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "git": "https://github.com/wulx/impicker-security.git",
   "packages": {}
 }

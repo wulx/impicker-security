@@ -41,7 +41,10 @@ impicker = {
   },
 
   // security options in JSON
-  security: function(encodedPolicy, signature) {
+  security: function(policy, secret) {
+    var encodedPolicy = this.encodePolicy(policy),
+        signature = this.signPolicy(encodedPolicy, secret);
+
     return {"policy": encodedPolicy, "signature": signature};
   },
 
