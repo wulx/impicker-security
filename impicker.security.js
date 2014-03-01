@@ -40,6 +40,11 @@ impicker = {
     return securedUrl;
   },
 
+  // security options in JSON
+  security: function(encodedPolicy, signature) {
+    return {"policy": encodedPolicy, "signature": signature};
+  },
+
   // https://developers.inkfilepicker.com/docs/security/#createPolicy
   // The expiration date of this policy after which it will no longer be valid.
   // The type should be an integer and it is expressed in seconds since 1970
